@@ -3,3 +3,7 @@
 <% @events.each do |current_event| %>
   <%= render 'single_event', event: current_event %>
 <% end %>
+
+<p>
+  <%= link_to 'New Event', new_event_path %>
+</p>
